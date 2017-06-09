@@ -281,5 +281,5 @@ key4(Lwe,Lwy):-listaodleglosci(Lwe,L1,Lwe), bubble12(Lwe,Lwy,L1,_).
 usun([],[]).
 usun([X],[X]).
 usun([H1,H2|T],T2):-H1=:=H2,usun([H2|T],T2).
-usun([H1,H2|T],[H1|T2]):-H1=\=H2,usun([H2|T],T2).
+usun([H1,H2|T],[H2|T2]):-H1=\=H2,usun([H2|T],T2).
 
